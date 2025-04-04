@@ -12,31 +12,6 @@
 		<meta property="og:description" content="Play minecraft 1.8 in your browser" />
 		<meta property="og:image" content="favicon.png" />
 		<link type="image/png" rel="shortcut icon" href="favicon.png" />
-		<script>
-        		document.addEventListener("DOMContentLoaded", function() {
-            		function requestFullscreen(element) {
-	                if (element.requestFullscreen) {
-	                    element.requestFullscreen();
-	                } else if (element.mozRequestFullScreen) { // Firefox
-	                    element.mozRequestFullScreen();
-	                } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
-	                    element.webkitRequestFullscreen();
-	                } else if (element.msRequestFullscreen) { // IE/Edge
-	                    element.msRequestFullscreen();
-	                }
-	            }
-
-	            // 在用户与页面交互后请求全屏
-	            document.addEventListener("click", function() {
-	                requestFullscreen(document.documentElement); // 整个页面
-	            });
-	
-	            // 也可以在加载页面后几秒钟请求全屏，实际项目中不推荐这种方式
-	            //setTimeout(function() {
-	            //    requestFullscreen(document.documentElement); // 整个页面
-	            //}, 3000); // 3秒后请求全屏
-	        });
-	    </script>
 		<script type="text/javascript" src="classes.js"></script>
 		<script type="text/javascript">
 			"use strict";
